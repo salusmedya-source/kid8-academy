@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N8 Kids Akademi - META Reklam Raporu</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Seçim rengi ayarlamaları */
+        ::selection {
+            background-color: #e0e7ff; /* indigo-100 */
+            color: #312e81; /* indigo-900 */
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#F8FAFC] text-slate-900 font-sans">
+
+    <!-- --- Premium Header Area --- -->
+    <div class="relative bg-white border-b border-slate-200/60 overflow-hidden">
+        <!-- Abstract Background Glows -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-100/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-purple-100/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+        </div>
+
+        <div class="max-w-[1440px] mx-auto px-8 py-10 relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-4">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                    Performans Raporu
+                </div>
+                <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-2">META Reklam Performans Raporu</h1>
+                <h2 class="text-xl text-slate-500 font-medium flex items-center gap-2">
+                    <span class="font-semibold text-slate-800">N8 Kids Academy</span>
+                    <span class="text-slate-300">&bull;</span>
+                    Lead Odaklı Reklam Performans Özeti
+                </h2>
+            </div>
+            
+            <div class="flex items-center gap-3 bg-white border border-slate-200 shadow-sm rounded-xl px-5 py-3">
+                <i data-lucide="calendar" class="text-slate-400" width="20" height="20"></i>
+                <div class="flex flex-col">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Tarih Aralığı</span>
+                    <span class="text-sm font-semibold text-slate-800">02 Mart &ndash; 02 Nisan 2026</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-[1440px] mx-auto px-8 py-10 space-y-8">
+        
+        <!-- --- KPI Cards Grid --- -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            
+            <!-- Card 1: Toplam Harcama -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-indigo-50 text-indigo-600 transition-transform group-hover:scale-110">
+                        <i data-lucide="wallet" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Toplam Harcama</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">36.000 TL</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Kontrollü bütçe kullanımı
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Toplam Sonuç -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-violet-50 text-violet-600 transition-transform group-hover:scale-110">
+                        <i data-lucide="target" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Toplam Sonuç (Lead)</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">112</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Düzenli başvuru akışı
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: CPL -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-rose-50 text-rose-500 transition-transform group-hover:scale-110">
+                        <i data-lucide="activity" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Sonuç Başı Maliyet</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">321 TL</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Verimli CPL oranı
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4: Erişim -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-blue-50 text-blue-500 transition-transform group-hover:scale-110">
+                        <i data-lucide="users" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Toplam Erişim</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">56.178</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Geniş hedef kitle
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5: Gösterim -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-sky-50 text-sky-500 transition-transform group-hover:scale-110">
+                        <i data-lucide="eye" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Toplam Gösterim</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">216.074</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Yüksek görünürlük
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6: Frekans -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-emerald-50 text-emerald-500 transition-transform group-hover:scale-110">
+                        <i data-lucide="repeat" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Frekans</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">3,84</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Optimum tekrar oranı
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 7: IG Takipçi -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 transition-all duration-300 hover:shadow-md hover:border-slate-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-xl bg-pink-50 text-pink-500 transition-transform group-hover:scale-110">
+                        <i data-lucide="instagram" class="opacity-80" width="24" height="24"></i>
+                    </div>
+                    <span class="text-xs font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded-full">META</span>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-500 mb-1">Instagram Takipçi Artışı</h3>
+                    <div class="text-3xl font-bold text-slate-900 tracking-tight mb-2">+70</div>
+                    <p class="text-xs text-slate-500 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 inline-block"></span>
+                        Marka bilinirliği katkısı
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 8: Empty card for grid balance -->
+            <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-6 flex flex-col items-center justify-center text-center border-none shadow-lg text-white">
+                <i data-lucide="trending-up" class="mb-3 opacity-90" width="32" height="32"></i>
+                <h3 class="font-bold text-lg mb-1">Başarılı Kampanya</h3>
+                <p class="text-indigo-100 text-xs font-medium">Hedefler doğrultusunda stabil büyüme sağlandı.</p>
+            </div>
+        </div>
+
+        <!-- --- Visualizations Section --- -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Line Chart Area -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] lg:col-span-2 p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                            <i data-lucide="line-chart" class="text-purple-500" width="20" height="20"></i>
+                            Görünürlük ve Etkileşim Trendi
+                        </h3>
+                        <p class="text-xs text-slate-500 font-medium mt-1">Kampanya süresince gösterimlerin zamana göre dağılımı</p>
+                    </div>
+                    <div class="px-3 py-1 rounded bg-slate-100 text-xs font-semibold text-slate-600">Günlük</div>
+                </div>
+                <div class="relative w-full h-48 mt-4">
+                    <svg viewBox="0 0 400 100" class="w-full h-full overflow-visible" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="5%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+                                <stop offset="95%" stop-color="#8B5CF6" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Grid lines -->
+                        <line x1="0" y1="25" x2="400" y2="25" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4 4" />
+                        <line x1="0" y1="50" x2="400" y2="50" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4 4" />
+                        <line x1="0" y1="75" x2="400" y2="75" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4 4" />
+                        
+                        <!-- Area -->
+                        <path d="M0,80 Q40,70 80,40 T160,50 T240,20 T320,60 T400,10" fill="url(#colorValue)" />
+                        <!-- Line -->
+                        <path d="M0,80 Q40,70 80,40 T160,50 T240,20 T320,60 T400,10" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <!-- Data points -->
+                        <circle cx="80" cy="40" r="4" fill="#fff" stroke="#8B5CF6" stroke-width="2" />
+                        <circle cx="160" cy="50" r="4" fill="#fff" stroke="#8B5CF6" stroke-width="2" />
+                        <circle cx="240" cy="20" r="4" fill="#fff" stroke="#8B5CF6" stroke-width="2" />
+                        <circle cx="320" cy="60" r="4" fill="#fff" stroke="#8B5CF6" stroke-width="2" />
+                    </svg>
+                    <!-- X-Axis labels -->
+                    <div class="absolute bottom-0 left-0 w-full flex justify-between text-[10px] text-slate-400 font-medium px-2 -mb-6">
+                        <span>05 Mar</span>
+                        <span>12 Mar</span>
+                        <span>19 Mar</span>
+                        <span>26 Mar</span>
+                        <span>02 Nis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donut Chart Area -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6 flex flex-col">
+                <div class="mb-2">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                        <i data-lucide="pie-chart" class="text-blue-500" width="20" height="20"></i>
+                        Bütçe Verimliliği
+                    </h3>
+                    <p class="text-xs text-slate-500 font-medium mt-1">Ortalama Maliyet (CPL) Dağılımı</p>
+                </div>
+                <div class="flex-grow flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center h-full relative py-6">
+                        <svg width="160" height="160" class="transform -rotate-90">
+                            <!-- Background circle -->
+                            <circle cx="80" cy="80" r="60" fill="transparent" stroke="#f1f5f9" stroke-width="16" />
+                            <!-- Progress circle (stroke-dashoffset = 376.99 - (0.75 * 376.99) = 94.24) -->
+                            <circle cx="80" cy="80" r="60" fill="transparent" stroke="#3B82F6" stroke-width="16" stroke-dasharray="376.99" stroke-dashoffset="94.24" stroke-linecap="round" class="drop-shadow-sm" />
+                        </svg>
+                        <!-- Center text -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <span class="text-2xl font-bold text-slate-900">321₺</span>
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400">CPL</span>
+                        </div>
+                        
+                        <!-- Legend -->
+                        <div class="mt-4 flex gap-4 text-xs font-medium">
+                            <div class="flex items-center gap-1.5 text-slate-600">
+                                <div class="w-3 h-3 rounded-full bg-blue-500"></div> Hedeflenen
+                            </div>
+                            <div class="flex items-center gap-1.5 text-slate-400">
+                                <div class="w-3 h-3 rounded-full bg-slate-200"></div> Sapma
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bar Chart Area -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] p-6">
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                        <i data-lucide="bar-chart-3" class="text-indigo-500" width="20" height="20"></i>
+                        Huni Karşılaştırması
+                    </h3>
+                    <p class="text-xs text-slate-500 font-medium mt-1">Erişim vs Gösterim vs Dönüşüm</p>
+                </div>
+                <div class="flex items-end justify-around h-48 mt-4 pb-6 pt-4 relative">
+                    <!-- Grid lines -->
+                    <div class="absolute inset-0 flex flex-col justify-between z-0 pb-6 pointer-events-none">
+                        <div class="w-full h-[1px] bg-slate-100"></div>
+                        <div class="w-full h-[1px] bg-slate-100"></div>
+                        <div class="w-full h-[1px] bg-slate-100"></div>
+                        <div class="w-full h-[1px] bg-slate-100"></div>
+                    </div>
+                    
+                    <!-- Bars -->
+                    <div class="relative z-10 flex flex-col items-center group cursor-pointer">
+                        <div class="w-12 h-[120px] bg-indigo-500 rounded-t-lg transition-all group-hover:bg-indigo-600 shadow-sm relative">
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">56.178</div>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 mt-3 absolute -bottom-6">Erişim</span>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col items-center group cursor-pointer">
+                        <div class="w-12 h-[160px] bg-blue-400 rounded-t-lg transition-all group-hover:bg-blue-500 shadow-sm relative">
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">216.074</div>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 mt-3 absolute -bottom-6">Gösterim</span>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col items-center group cursor-pointer">
+                        <div class="w-12 h-[40px] bg-violet-500 rounded-t-lg transition-all group-hover:bg-violet-600 shadow-sm relative">
+                            <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">112</div>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 mt-3 absolute -bottom-6">Lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Grid Area -->
+            <div class="lg:col-span-2 flex flex-col gap-6">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="p-2 bg-amber-100 text-amber-600 rounded-lg">
+                        <i data-lucide="lightbulb" class="fill-current opacity-80" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">Performans Değerlendirmesi</h2>
+                        <p class="text-sm text-slate-500 font-medium">Kampanya sonuçlarına dayalı stratejik çıkarımlar</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100/50 hover:bg-slate-100/80 transition-colors">
+                        <div class="flex-shrink-0 p-2.5 bg-white rounded-xl shadow-sm border border-slate-100 text-indigo-600">
+                            <i data-lucide="eye" width="20" height="20"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed font-medium pt-1">
+                            Kampanya süresince yüksek erişim ve güçlü gösterim hacmi ile hedef kitleye etkili şekilde ulaşılmıştır.
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100/50 hover:bg-slate-100/80 transition-colors">
+                        <div class="flex-shrink-0 p-2.5 bg-white rounded-xl shadow-sm border border-slate-100 text-indigo-600">
+                            <i data-lucide="target" width="20" height="20"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed font-medium pt-1">
+                            Lead odaklı strateji sayesinde düzenli başvuru akışı sağlanmış, bütçe kontrollü şekilde verimli kullanılmıştır.
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100/50 hover:bg-slate-100/80 transition-colors">
+                        <div class="flex-shrink-0 p-2.5 bg-white rounded-xl shadow-sm border border-slate-100 text-indigo-600">
+                            <i data-lucide="check-circle" width="20" height="20"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed font-medium pt-1">
+                            Elde edilen veriler, doğru hedefleme ve optimizasyon ile kampanyanın stabil ve sürdürülebilir performans sergilediğini göstermektedir.
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100/50 hover:bg-slate-100/80 transition-colors">
+                        <div class="flex-shrink-0 p-2.5 bg-white rounded-xl shadow-sm border border-slate-100 text-indigo-600">
+                            <i data-lucide="megaphone" width="20" height="20"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 leading-relaxed font-medium pt-1">
+                            Reklam çalışmaları, marka bilinirliği ve sosyal medya büyümesine de katkı sağlamıştır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --- Campaign Summary Module --- -->
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.05)] overflow-hidden">
+            <div class="px-6 py-5 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800">Kampanya Özeti</h3>
+                    <p class="text-xs text-slate-500 font-medium mt-1">Ana reklam setinin detaylı metrik dökümü</p>
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-600">
+                    <thead class="bg-slate-50 text-xs uppercase text-slate-400 font-bold tracking-wider">
+                        <tr class="whitespace-nowrap">
+                            <th class="px-6 py-4">Reklam Seti Adı</th>
+                            <th class="px-6 py-4">İlişkilendirme Ayarı</th>
+                            <th class="px-6 py-4">Sonuçlar</th>
+                            <th class="px-6 py-4">Gösterge</th>
+                            <th class="px-6 py-4 text-right">Erişim</th>
+                            <th class="px-6 py-4 text-right">Gösterim</th>
+                            <th class="px-6 py-4">Tarih Aralığı</th>
+                            <th class="px-6 py-4 text-right">IG Takip</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/50 transition-colors whitespace-nowrap">
+                            <td class="px-6 py-4 font-semibold text-slate-800 flex items-center gap-3">
+                                <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                N8 Kids Academy 5 Mart
+                            </td>
+                            <td class="px-6 py-4 text-xs font-medium text-slate-500">
+                                7 günlük tıklama veya 1 günlük görüntüleme
+                            </td>
+                            <td class="px-6 py-4 font-bold text-slate-900">112</td>
+                            <td class="px-6 py-4">
+                                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-500 text-[10px] font-mono font-medium">actions:leadgen.other</span>
+                            </td>
+                            <td class="px-6 py-4 text-right font-medium">56.178</td>
+                            <td class="px-6 py-4 text-right font-medium">216.074</td>
+                            <td class="px-6 py-4 text-xs">
+                                <div class="flex flex-col">
+                                    <span>Bşl: 2026-03-05</span>
+                                    <span class="text-slate-400">Bit: 2026-04-02</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-right font-bold text-pink-600">+70</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center pb-8 pt-4">
+            <p class="text-xs text-slate-400 font-medium">
+                Bu rapor, Meta Business Manager verileri baz alınarak otomatik oluşturulmuştur. &bull; N8 Kids Academy &copy; 2026
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
